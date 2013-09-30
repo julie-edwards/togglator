@@ -1,0 +1,38 @@
+/* Togglator is a jQuery plugin by Julie Edwards
+ * http://julie-edwards.com
+ */
+
+.togglator{
+    margin:20px 0;
+}
+.togglator-title{
+    cursor:pointer;
+    border:1px solid black;
+    padding:4px;
+}
+.togglator-arrow{
+    width:12px;
+    height:10px;
+    margin:4px;
+    float:left;
+    background:url('togglator-arrow.png') center center no-repeat;
+}
+.togglator-content{
+    border:1px solid grey;
+    padding:4px;
+}
+/* rotation angle, direction, and duration */
+.open .rotate{   
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.animate{
+    -moz-transition:-moz-transform .4s;
+    -webkit-transition:-webkit-transform .4s;
+    -o-transition:-o-transform .4s;
+    transition:transform .4s;
+}
+

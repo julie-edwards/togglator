@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="jquery-1.10.2.min.js"></script>
+    <script src="togglator.js"></script>
+    <link rel="stylesheet" href="togglator.css">
+
+</head>
+<body>
+    <h1>Togglator</h1>
+    <p>Thanks for trying togglator! Togglator is an easy to use jQuery plugin that creates toggling content panels.  Try out some of the settings below, and visit me at <a href="http://julie-edwards.com">julie-edwards.com</a> to learn more.</p>
+    <div class="togglator togglator1" title="">
+        <p>
+        Default settings!
+        </p>
+        <p>
+            hideInitial  : true,<br />
+            animate      : true,<br />
+            animateSpeed : 400,<br />
+            arrow        : true,<br />
+            rotateArrow  : true, <br />        
+            animateArrow : true,<br />       
+            defaultTitle : "View Content"
+        </p>
+    </div>
+    <div class="togglator togglator2" title="Title Attribute">
+        <p>
+            rotateArrow  :  false,<br />
+            animateSpeed  :  200
+        </p>
+        <p>Title added via title attribute.</p>
+    </div>
+    <div class="togglator togglator3" title="">
+        <p>
+            hideInitial  :  false,<br />
+            animateArrow  :  false
+        </p>
+    </div>
+    <div class="togglator togglator4" title="">
+        <p>
+            arrow  :  false,<br />
+            animate  :  false,<br />
+            defaultTitle  :  "Special Default Title",
+        </p>
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+        $('.togglator1').togglate();
+        $('.togglator2').togglate({
+            rotateArrow  :  false,
+            animateSpeed  :  200
+        });
+        $('.togglator3').togglate({
+            hideInitial  :  false,
+            animateArrow  :  false
+        });
+        $('.togglator4').togglate({
+            arrow  :  false,
+            animate  :  false,
+            defaultTitle  :  "Special Default Title",
+        });
+    })
+</script>
+</html>
